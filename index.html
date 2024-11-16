@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="script/script.js"></script>
+    <title>Accueil</title>
+</head>
+<body>
+    <!------------  NOTIFICATION  ------------->
+    <div class="Message">
+        <h4></h4>
+        <i class="fa fas-times"></i>
+    </div>
+
+
+
+    <header>
+        <div class="Logo">
+            <img src="style/logo1.png" alt="" id="logo">
+            <div class="Titre">  <h1> Tourist</h1></div>
+        </div>
+        <div class="Vues">
+            <div class="Langue">
+                <i>FR</i>
+            </div>
+            <div class="Notification">
+                <i class="fas fa-bell" onclick="AfficheSousBranche('Notification')"></i>
+
+                <div class="Elements SousMenu slide-in">
+                    <div class="Texte"><strong>Notifications récentes :</strong> <i class="fas fa-trash" style="color: red;"></i></div>
+                    <div class="Element">
+                        <div class="Information">Bonjour, j'aimerais reserver un hôtel </div>
+                        <i class="fas fa-close"></i>
+                    </div>
+                    <div class="Element">
+                        <div class="Information">Saluttt y'a t'il encore possibilté de reservation ?</div>
+                        <i class="fas fa-close"></i>
+                    </div>
+                    <div class="Element">
+                        <div class="Information">Bonjour Mr</div>
+                        <i class="fas fa-close"></i>
+                    </div>
+                    <div class="Element">
+                        <div class="Information">J'ai passé un sejour excellent chez vous merci</div>
+                        <i class="fas fa-close"></i>
+                    </div>
+                    <div class="Element">
+                        <div class="Information">salut</div>
+                        <i class="fas fa-close"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="Recherche">
+                <i class="fas fa-search" onclick="AfficheSousBranche('Recherche')"></i>
+
+                <div class="Barre_recherche SousMenu slide-in">
+                    <div class="Texte"><strong>Rechercher :</strong></div>
+                    <div class="Input">
+                        <input type="text" placeholder="Entrez votre élément de rechercher">
+                        <i class="fas fa-close"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="Utilisateur">
+                <i class="fas fa-user-circle" onclick="AfficheSousBranche('Utilisateur')"></i>
+
+                <div class="Compte SousMenu slide-in">
+                    <div class="Texte"><strong>Aucun compte connecté</strong></div>
+                    <div class="Options">
+                        <div class="Inscrire underline" onclick="AfficherInscription()">S'incrire</div>
+                        <div class="Connecter underline" onclick="AfficherConnexion()">Se connecter</div>
+                    </div>
+                </div>
+            </div>
+            <div class="Menu">
+                <i class="fas fa-bars" onclick="AfficherMenu()"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="ArrierePlanMenu" onclick="AfficherMenu()">
+        <div class="Pages">
+            <div class="Page Actuel" style="margin-top: 10%;"><a href="#">Accueil</a></div>
+            <div class="Page"><a href="#">A propos de nous</a></div>
+            <div class="Page"><a href="#">Services</a></div>
+            <div class="Page"><a href="#">Paquets</a></div>
+            <div class="Page"><a href="#">Contact</a></div>
+        </div>
+    </div>
+
+    <div class="ArrierePlanConnexion" onclick="AfficherConnexion()">
+        <div class="Connexion">
+            <div class="Titre">Connexion</div>
+            <div class="Formulaire">
+                <div class="colonne">
+                    <div class="Option Select">
+                        Numéro de téléphone : <input type="checkbox" name="" id="">
+                    </div>
+                    <div class="Option">
+                        Email : <input type="checkbox" name="" id="">
+                    </div>
+                </div>
+                <div class="colonne">
+                    <div class="InputContainer Numero">
+                        <input type="text" name="" id="" required>
+                        <label for="" class="Input">Numéro de téléphone</label>
+                    </div>
+                    <div class="InputContainer Mdp">
+                        <input type="password" name="" id="" required>
+                        <label for="" class="Input">Mot de passe</label>
+                    </div>
+                </div>
+                <div class="colonne">
+                    <div class="InputContainer Email">
+                        <input type="text" name="" id="" required>
+                        <label for="" class="Input">Adresse mail</label>
+                    </div>
+                    <div class="InputContainer Mdp">
+                        <input type="password" name="" id="" required>
+                        <label for="" class="Input">Mot de passe</label>
+                    </div>
+                </div>
+            </div>
+            <div class="Bouton">
+                <button>Se connecter</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="ArrierePlanInscription" onclick="AfficherInscription()">
+        <div class="Inscription">
+            <div class="Titre">Inscription</div>
+            <div class="Formulaire">
+                <div class="colonne">
+                    <div class="InputContainer Nom">
+                        <input type="text" name="" id="saveNom" onchange="VerificationNom('saveNom')" required>
+                        <label for="" class="Input">Entrer votre nom</label>
+                        <i></i>
+                    </div>
+                    <div class="InputContainer Prenom">
+                        <input type="text" name="" id="savePrenom" onchange="VerificationPrenom('savePrenom')" required>
+                        <label for="" class="Input">Entrer votre prénom</label>
+                        <i></i>
+                    </div>
+                </div>
+                <div class="colonne">
+                    <div class="InputContainer Numero">
+                        <input type="text" name="" id="saveNumero" onchange="VerificationNumero('saveNumero')" required>
+                        <label for="" class="Input">Entrer votre numéro de téléphone</label>
+                        <i></i>
+                    </div>
+                    <div class="InputContainer Mail">
+                        <input type="email" name="" id="saveMail" onchange="VerificationMail('saveMail')" required>
+                        <label for="" class="Input">Entrer votre adresse mail</label>
+                        <i></i>
+                    </div>
+                </div>
+                <div class="colonne">
+                    <div class="InputContainer Date">
+                        <input type="text" name="" id="saveDate" onchange="VerificationDate('saveDate')" required>
+                        <label for="" class="Input">Entrer votre date de naissance</label>
+                        <i></i>
+                    </div>
+                    <div class="InputContainer Lieu">
+                        <input type="text" name="" id="saveLieu" onchange="VerificationLieu('saveLieu')" required>
+                        <label for="" class="Input">Entrer votre lieu de naissance</label>
+                        <i></i>
+                    </div>
+                </div>
+                <div class="colonne">
+                    <div class="InputContainer Utilisateur">
+                        <input type="text" name="" id="saveUsername" onchange="VerificationUsername('saveUsername')" required>
+                        <label for="" class="Input">Entrer votre nom d'utilisateur</label>
+                        <i></i>
+                    </div>
+                    <div class="InputContainer MotDePasse">
+                        <input type="password" name="" id="" required>
+                        <label for="" class="Input">Entrer votre mot de passe</label>
+                        <i></i>
+                    </div>
+                </div>
+                <div class="colonne">
+                    <div class="InputContainer MDP1">
+                        <input type="password" name="" id="saveMDP1" onchange="VerificationPassword('saveMDP1')" required>
+                        <label for="" class="Input">Entrer votre mot de passe</label>
+                        <i></i>
+                    </div>
+                    <div class="InputContainer MDP2">
+                        <input type="password" name="" id="saveMDP2" onchange="VerificationPassword2('saveMDP2')" required>
+                        <label for="" class="Input">Vérifier votre mot de passe</label>
+                        <i></i>
+                    </div>
+                </div>
+            </div>
+            <div class="Bouton">
+                <button>S'inscrire</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <section class="body">
+        
+        <section class="Publicite" style="margin-bottom: 5%;">
+            <div class="Affiches">
+                <div class="Affiche content show" data-content="0">
+                    <h1>Profitez de vos vacances avec nous</h4>
+                    <button>      Voir plus    </button>
+                </div>
+            </div>
+        </section>
+    
+        <section class="Infos">
+            <h1>Nos principes</h1>
+            <section>
+                <div class="Info">
+                    <img src="frontend/img1.jpg" alt="">
+                    <h2 class="slide-in">Sécurité</h2>
+                    <span>Votre sécurité est notre priorité absolue</span>
+                </div>
+                <div class="Info">
+                    <img src="frontend/img1.jpg" alt="">
+                    <h2 class="slide-in">Personnalisation</h2>
+                    <span>Avec nous, Chaque voyage est unique </span>
+                </div>
+                <div class="Info">
+                    <img src="frontend/img1.jpg" alt="">
+                    <h2 class="slide-in">Rapidité</h2>
+                    <span>Seulement en moins 2 minutes chrono</span>
+                </div>
+            </section>
+        </section>
+    
+    
+        <section class="Infos" style="margin-top: 5%;">
+            <h1>Nos services</h1>
+            <section>
+                <div class="Info">
+                    <img src="frontend/img1.jpg" alt="">
+                    <h2 class="slide-in1">Réservation Hôtel</h2>
+                    <span>Envoyer de l'argent à vos proches, payer vos impôts, vos courses et marchandises</span>
+                </div>
+                <div class="Info">
+                    <img src="frontend/img1.jpg" alt="">
+                    <h2 class="slide-in1">Guides de voyage</h2>
+                    <span>Recevez vos payements</span>
+                </div>
+                <div class="Info">
+                    <img src="frontend/img1.jpg" alt="">
+                    <h2 class="slide-in1">Gestion Evénements</h2>
+                    <span>Convertisser votre monnaie</span>
+                </div>
+            </section>
+        </section>
+    </section>
+    
+
+    <footer>
+        <div class="Avis">
+            <h1>Avis :</h1>
+            <input type="text" name="" id="" placeholder="Entrer votre nom ou adresse mail">
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <button>Envoyer</button>
+        </div>
+        <div class="Joindre">
+            <div class="Telephone">
+                <h2>Numéro de téléphone :</h2>
+                <h3>659567319/ 699488466</h3>
+            </div>
+            <div class="Email">
+                <h2>Adresse mail :</h2>
+                <h3>ngapnaahmed7823@gmail.com</h3>
+            </div>
+        </div>
+        <div class="Reseaux">
+            <h1>Nos pages : </h1>
+            <div class="Icones">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
