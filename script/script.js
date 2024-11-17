@@ -75,6 +75,15 @@ function AfficherConnexion() {
     });
 }
 
+function AfficherdeConnexion(){
+
+  //window.location.href = "index.html";
+  if (confirm("Êtes-vous sûr de vouloir vous déconnecter ?")) {
+    window.location.href = "index.html";
+  }
+
+}
+
 
 let currentContent = 0; // Index de l'affiche actuelle
 

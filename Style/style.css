@@ -118,8 +118,13 @@ a, a:visited, a:focus{
         height: 100%;
         flex-direction: row;
         align-items: center;
-        gap: 5%;
+        gap:0%;
     }
+
+    header .Titre {
+        margin-top: 18px;
+    }
+
 
     header .Vues {
         display: flex;
