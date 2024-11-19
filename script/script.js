@@ -45,35 +45,9 @@ function AfficherMenu() {
     });
 }
 
-function AfficherInscription() {
-    divCible = document.querySelector("body");
-    var divInscription = document.querySelector(".Inscription");
 
-    if (divCible.classList.contains("Inscrire")) {
-        divCible.classList.remove("Inscrire");
-    } else {
-        divCible.classList.add("Inscrire");
-    }
 
-    divInscription.addEventListener('click', function(event) {
-        event.stopPropagation();
-    });
-}
 
-function AfficherConnexion() {
-    divCible = document.querySelector("body");
-    var divConnexion = document.querySelector(".Connexion");
-
-    if (divCible.classList.contains("Connecter")) {
-        divCible.classList.remove("Connecter");
-    } else {
-        divCible.classList.add("Connecter");
-    }
-
-    divConnexion.addEventListener('click', function(event) {
-        event.stopPropagation();
-    });
-}
 
 function AfficherdeConnexion(){
 
@@ -82,8 +56,15 @@ function AfficherdeConnexion(){
     window.location.href = "index.html";
   }
 
+
 }
 
+
+function AfficherConnexion(){
+
+  window.location.href = "connexion.php";
+
+}
 
 let currentContent = 0; // Index de l'affiche actuelle
 

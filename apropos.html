@@ -8,38 +8,45 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="style/style.css">
     <script src="script/script.js"></script>
-    <title>Accueil</title>
+    <title>A propos de nous</title>
 </head>
 <body>
+    <!------------  NOTIFICATION  ------------->
+    <div class="Message">
+        <h4></h4>
+        <i class="fa fas-times"></i>
+    </div>
 
 
 
     <header>
         <div class="Logo">
             <img src="style/logo1.png" alt="" id="logo">
-            <div class="Titre">  <h1> Tourist</h1></div>
+            <div class="Titre"> <h1> Tourist</h1> </div>
         </div>
         <div class="Vues">
             <div class="Langue">
                 <i>FR</i>
             </div>
-           
+            
             <div class="Recherche">
                 <i class="fas fa-search" onclick="AfficheSousBranche('Recherche')"></i>
 
                 <div class="Barre_recherche SousMenu slide-in">
                     <div class="Texte"><strong>Rechercher :</strong></div>
                     <div class="Input">
-                        <input type="text" placeholder="Entrez votre élément de rechercher">
+                        <input type="text" placeholder="Entrer l'élément rechercher">
                         <i class="fas fa-close"></i>
                     </div>
                 </div>
             </div>
             <div class="Utilisateur">
                 <i class="fas fa-user-circle" onclick="AfficheSousBranche('Utilisateur')"></i>
+
                 <div class="Compte SousMenu slide-in">
                     <div class="Texte"><strong>Aucun compte connecté</strong></div>
                     <div class="Options">
+                        <div class="Inscrire underline" onclick="AfficherInscription()">S'incrire</div>
                         <div class="Connecter underline" onclick="AfficherConnexion()">Se connecter</div>
                     </div>
                 </div>
@@ -52,72 +59,65 @@
 
     <div class="ArrierePlanMenu" onclick="AfficherMenu()">
         <div class="Pages">
-            <div class="Page Actuel" style="margin-top: 10%;"><a href="#">Accueil</a></div>
-            <div class="Page"><a href="apropos.html">A propos de nous</a></div>
+            <div class="Page" ><a href="index.html">Accueil</a></div>
+            <div class="Page Actuel" style="margin-top: 10%;"><a href="apropos.html">A propos de nous</a></div>
             <div class="Page"><a href="#">Services</a></div>
             <div class="Page"><a href="#">Paquets</a></div>
-            <div class="Page"><a href="contact.html">Contact</a></div>
+            <div class="Page"><a href="contact.html">Contacts</a></div>
         </div>
     </div>
 
-    
 
 
-
-    <section class="body">
-        
-        <section class="Publicite" style="margin-bottom: 5%;">
-            <div class="Affiches">
-                <div class="Affiche content show" data-content="0">
-                    <h1>Profitez de vos vacances avec nous</h1>
-                    <button>      Voir plus    </button>
-                </div>
+    <section class="Publicite" style="margin-bottom: 5%;">
+        <div class="Affiches">
+            <div class="Affiche content show" data-content="0">
+                <h1>A propos </h4>
+                <h2>La meilleure agence de voyage</h2>
             </div>
-        </section>
-    
-        <section class="Infos">
-            <h1>Nos principes</h1>
-            <section>
-                <div class="Info">
-                    <img src="frontend/img1.jpg" alt="">
-                    <h2 class="slide-in">Sécurité</h2>
-                    <span>Votre sécurité est notre priorité absolue</span>
-                </div>
-                <div class="Info">
-                    <img src="frontend/img1.jpg" alt="">
-                    <h2 class="slide-in">Personnalisation</h2>
-                    <span>Avec nous, Chaque voyage est unique </span>
-                </div>
-                <div class="Info">
-                    <img src="frontend/img1.jpg" alt="">
-                    <h2 class="slide-in">Rapidité</h2>
-                    <span>Seulement en moins 2 minutes chrono</span>
-                </div>
-            </section>
-        </section>
-    
-    
-        <section class="Infos" style="margin-top: 5%;">
-            <h1>Nos services</h1>
-            <section>
-                <div class="Info">
-                    <img src="frontend/img1.jpg" alt="">
-                    <h2 class="slide-in1">Réservation Hôtel</h2>
-                    <span>Envoyer de l'argent à vos proches, payer vos impôts, vos courses et marchandises</span>
-                </div>
-                <div class="Info">
-                    <img src="frontend/img1.jpg" alt="">
-                    <h2 class="slide-in1">Guides de voyage</h2>
-                    <span>Recevez vos payements</span>
-                </div>
-                <div class="Info">
-                    <img src="frontend/img1.jpg" alt="">
-                    <h2 class="slide-in1">Gestion Evénements</h2>
-                    <span>Convertisser votre monnaie</span>
-                </div>
-            </section>
-        </section>
+        </div>
     </section>
+
+    
+        
+        <section class="Actions" style="margin-top: 5%;">
+            <h1>A propos de nous</h1>
+            <section>
+                <div class="Action" >
+                    <div class="img"><img src="frontend/img1.jpg" alt=""></div>
+                    <span>YIAGNIGNI NGAPNA AHMED</span>
+                </div>
+                <div class="Action">
+                    <div class="img"><img src="frontend/img1.jpg" alt=""></div>
+                    <span>WAMBO NONO BRYAN</span>
+                </div>
+                <div class="Action">
+                    <div class="img"><img src="frontend/img1.jpg" alt=""></div>
+                    <span>KUMELA NYA OCEANE</span>
+                </div>
+            </section>
+        </section>
+
+
+        <section class="Actions" style="margin-top: 5%;">
+            <section>
+                <div class="Action">
+                    <div class="img"><img src="frontend/img1.jpg" alt=""></div>
+                    <span>YODJA JUSTIN JUNIOR</span>
+                </div>
+                <div class="Action">
+                    <div class="img"><img src="frontend/img1.jpg" alt=""></div>
+                    <span>BIND MAX GIOVANNI</span>
+                </div>
+                <div class="Action">
+                    <div class="img"><img src="frontend/img1.jpg" alt=""></div>
+                    <span>NANA LANDRE ARNOLD</span>
+                </div>
+            </section>
+        </section>
+
+    </section>
+
 
 
     <footer>
@@ -143,6 +143,5 @@
             </div>
         </div>
     </footer>
-    
 </body>
 </html>

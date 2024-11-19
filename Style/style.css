@@ -1040,7 +1040,6 @@ a, a:visited, a:focus{
 
 
 
-
     footer {
         display: flex;
         position: absolute;
@@ -1202,5 +1201,237 @@ a, a:visited, a:focus{
         font-weight: bold;
         margin-left: 30px;
     }
+
+
+
+
+
+
+
+
+
+
+    
+.contact_text1 {
+    position: absolute;
+    left: 112px;
+    top: 850px;
+    width: 411px;
+    height: 106.5px;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  .contact_text2 {
+    position: absolute;
+    left: 112px;
+    top: 900px;
+    width: 411px;
+    height: 106.5px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+ .info_contact {
+    position: absolute;
+    left: 112px;
+    top: 1057px;
+    width: 411px;
+    height: 211.73px;
+  }
+
+  .img1 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 35px;
+    height: 35px;
+    background: #b5e742;
+    background-blend-mode: normal;
+  }
+
+  .img_text1 {
+    position: absolute;
+    left: 45px;
+    top: 7px;
+    width: 366px;
+    height: 20px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .img2 {
+    position: absolute;
+    left: 0px;
+    top: 63px;
+    width: 35px;
+    height: 35px;
+    background: #b5e742;
+    background-blend-mode: normal;
+  }
+
+  .img_text2 {
+    position: absolute;
+    left: 44px;
+    top: 70px;
+    width: 234px;
+    height: 20px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
+
+  .img3 {
+    position: absolute;
+    left: 2px;
+    top: 117px;
+    width: 35px;
+    height: 35px;
+    background: #b5e742;
+    background-blend-mode: normal;
+  }
+  
+  .img_text3 {
+    position: absolute;
+    left: 47px;
+    top: 124px;
+    width: 228px;
+    height: 20px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .img4 {
+    position: absolute;
+    left: 0px;
+    top: 173px;
+    width: 35px;
+    height: 35px;
+    background: #b5e742;
+    background-blend-mode: normal;
+  }
+
+  .img_text4 {
+    position: absolute;
+    left: 37px;
+    top: 173px;
+    width: 374px;
+    height: 38.73px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
+
+  .contact_text3 {
+    position: absolute;
+    left: 934px;
+    top: 850px;
+    width: 390px;
+    height: 87.14px;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  .contact_text4 {
+    position: absolute;
+    left: 934px;
+    top: 900px;
+    width: 390px;
+    height: 87.14px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .input1 {
+    position: absolute;
+    left: 934px;
+    top: 985px;
+    width: 390px;
+    height: 63px;
+    background: rgba(255,236,179,0.3);
+    background-blend-mode: normal;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .input2 {
+    position: absolute;
+    left: 934px;
+    top: 1067px;
+    width: 390px;
+    height: 63px;
+    background: rgba(255,236,179,0.3);
+    background-blend-mode: normal;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .input3 {
+    position: absolute;
+    left: 934px;
+    top: 1158px;
+    width: 390px;
+    height: 63px;
+    background: rgba(255,236,179,0.3);
+    background-blend-mode: normal;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .input4 {
+    position: absolute;
+    left: 934px;
+    top: 1249px;
+    width: 390px;
+    height: 145px;
+    background: rgba(255,236,179,0.3);
+    background-blend-mode: normal;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+
+  .button_form {
+    position: absolute;
+    left: 1084px;
+    top: 1434px;
+    width: 90px;
+    height: 40px;
+    background: rgba(181,231,66,0.58);
+    background-blend-mode: normal;
+    color: #ffffff;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: -0.08px;
+  }
 }
+
+
+.footer_pied {
+    position: absolute;
+    left: 0px;
+    top: 1506px;
+    width: 100%;
+    height: 278px;
+  }
+
+
+
+
+  
 
